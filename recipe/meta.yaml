@@ -34,7 +34,9 @@ test:
 
 about:
   home: https://github.com/simple-salesforce/simple-salesforce
-  summary: A basic Salesforce.com REST API client.
+  dev_url: https://github.com/simple-salesforce/simple-salesforce
+  description: 'A very simple Salesforce.com REST API client for Python'
+  summary: 'Simple Salesforce is a basic Salesforce.com REST API client. The goal is to provide a very low-level interface to the API, returning an ordered dictionary of the API JSON response.'
   license: Apache-2.0
   license_file: LICENSE.txt
 
