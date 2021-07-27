@@ -1,5 +1,5 @@
 {% set name = "simple-salesforce" %}
-{% set version = "1.10.1" %}
+{% set version = "1.11.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/simple-salesforce-{{ version }}.tar.gz
-  sha256: 20fd66cf40da732b9cdcb2f7160dde7bb298ef0c31702d1fdd767d1fc68cfe1b
+  sha256: cc1d3ec6ae25e89484aa8e0c02f6005ec20647b24b3b269b1005847d2cd365c8
 
 build:
   number: 0
@@ -35,8 +35,8 @@ test:
 about:
   home: https://github.com/simple-salesforce/simple-salesforce
   dev_url: https://github.com/simple-salesforce/simple-salesforce
-  description: 'A very simple Salesforce.com REST API client for Python'
-  summary: 'Simple Salesforce is a basic Salesforce.com REST API client. The goal is to provide a very low-level interface to the API, returning an ordered dictionary of the API JSON response.'
+  description: A very simple Salesforce.com REST API client for Python
+  summary: Simple Salesforce is a basic Salesforce.com REST API client. The goal is to provide a very low-level interface to the API, returning an ordered dictionary of the API JSON response.
   license: Apache-2.0
   license_file: LICENSE.txt
 
