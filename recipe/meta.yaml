@@ -1,6 +1,5 @@
 {% set name = "simple-salesforce" %}
-{% set version = "1.10.1" %}
-
+{% set version = "1.12.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,21 +7,25 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/simple-salesforce-{{ version }}.tar.gz
-  sha256: 20fd66cf40da732b9cdcb2f7160dde7bb298ef0c31702d1fdd767d1fc68cfe1b
+  sha256: ef65f72438e3b215619f6835d3d4356e147adf3a7ece6896d239127dd6aefcd1
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
+    - python >=3.8
     - pip
-    - python >=3.5
   run:
-    - authlib
-    - python >=3.5
+    - python >=3.8
     - requests >=2.22.0
+    - cryptography
+    - zeep
+    - pyjwt
+    - more-itertools
+    - pendulum
 
 test:
   imports:
@@ -43,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - mariusvniekerk
+    - rxm7706
